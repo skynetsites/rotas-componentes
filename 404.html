@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=/rotas-componentes" />
     <title>404 - Página não encontrada</title>
 </head>
 <body>
     <h1>404 - Página não encontrada</h1>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var path = window.location.pathname;
-      var basePath = '/rotas-componentes';
-
-      if (!path.startsWith(basePath)) {
-        window.location.replace(basePath + '/');
-      }
-    });
-  </script>
+    <script type="text/javascript">
+      // Redireciona para index.html, preservando a rota
+      (function () {
+        var currentPath = window.location.pathname;
+        var basePath = '/rotas-componentes'; // Substitua pelo nome real do repositório
+        var redirectTo = basePath + '/?redirect=' + currentPath;
+        window.location.replace(redirectTo);
+      })();
+    </script>
 </body>
 </html>
