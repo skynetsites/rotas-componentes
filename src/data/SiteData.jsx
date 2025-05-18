@@ -3,7 +3,7 @@ const SiteData = {
   // Informações do Site
   siteinfo: {
     name: "Skynet React",
-    description: "Temos o compromisso é desenvolver produtos acessíveis e de forma inclusiva e eficiente.",
+    description: "Temos o compromisso de desenvolver produtos acessíveis, de forma inclusiva e eficiente.",
     icon: "ti ti-brand-react",
     user: {
       name: "Isaias Oliveira",
