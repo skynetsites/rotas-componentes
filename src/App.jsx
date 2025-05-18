@@ -40,6 +40,12 @@ export const GlobalStyle = createGlobalStyle`
     object-fit: cover;
   }
   
+  /* Estiliza menu principal no mobile */
+  .p-menubar-mobile-active .p-menubar-root-list {
+    padding: 0.25rem 0;
+    border-radius: 6px;
+  }
+
   /* Estiliza o spinner de carregamento */
   .custom-spinner .p-progress-spinner-circle {
     stroke: var(--blue-600) !important;
