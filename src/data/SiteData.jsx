@@ -301,7 +301,7 @@ const SiteData = {
         name: "Google Map Tab",
         description: "Um plugin que permite adicionar Google Maps em posts ou páginas usando um shortcode.",
         technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "API Google", "WordPress"],
-        link: "https://github.com/skynetsites/google-map-tab",
+        link: "https://wordpress.com/plugins/google-map-tab",
       }
     ],
     activity: [
