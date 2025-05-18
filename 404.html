@@ -8,12 +8,16 @@
 <body>
     <h1>404 - Página não encontrada</h1>
     <script type="text/javascript">
-      (function () {
+    (function () {
+        var base = '/rotas-componentes';
         var currentPath = window.location.pathname;
-        var base = '/rotas-componentes'; // Substitua se necessário
+
+        // Se já estamos em index.html (evita loop)
+        if (!window.location.pathname.includes('/index.html')) {
         var redirectUrl = base + currentPath;
         window.location.replace(redirectUrl);
-      })();
-    </script>
+        }
+    })();
+</script>
 </body>
 </html>
