@@ -18,7 +18,7 @@ const Header = () => {
       <Link
         to={v.link || "#"}
         className={`p-menuitem-link flex items-center font-semibold 
-          py-2 gap-2 sm:my-1 sm:mx-2 border-round-md transition-all transition-duration-300 
+          py-2 gap-2 border-round-md transition-all transition-duration-300 
           ${currentPath === v.link 
             ? 'bg-blue-600 text-white' // Destaca o menu ativo
             : 'text-blue-700 hover:text-white hover:bg-blue-500'}`} // Estilo ao passar o mouse
