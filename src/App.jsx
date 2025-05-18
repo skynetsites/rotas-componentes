@@ -146,11 +146,15 @@ useEffect(() => {
       ? "Sobre"
       : path === "/contact"
       ? "Contato"
+      : path === "/login"
+      ? "Entrar"
+      : path === "/register"
+      ? "Registrar"
       : rotasUnderConstruction.some((route) => route.link === path)
       ? "Página em Construção"
       : !isValidRoute(path)
       ? "404 - Página não Encontrada"
-      : "Nova Página";
+      : path == "Perfil" ? `${userData.name} - Perfil` : path;
 
   document.title = title;
 

@@ -82,7 +82,7 @@ const Login = () => {
       <Toast ref={toast} />
 
       {/* Dados de teste acesso de usuário */}
-      <h1 className="text-center text-5xl text-gray-800 mt-0 mb-4">Login</h1>
+      <h1 className="text-center text-5xl text-gray-800 mt-0 mb-4">Entrar</h1>
       <h2 className="text-center text-sm mt-0 mb-2">Dados teste de login:</h2>
       <p className="text-center text-sm mt-0 mb-3">
         <b>E-mail:</b> isaias@skynetreact.com

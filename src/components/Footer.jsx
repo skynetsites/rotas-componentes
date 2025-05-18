@@ -30,7 +30,6 @@ const Footer = () => {
                 : 'text-blue-100 border-transparent hover:text-white hover:border-blue-100' // Estilo ao passar o mouse
               }`}
               title={v.name}
-              target="_blank"
             >
               {v.name}
             </Link>

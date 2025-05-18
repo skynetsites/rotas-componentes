@@ -180,7 +180,7 @@ function UserSidebar() {
                         rounded
                         onClick={() => {
                           localStorage.removeItem("user"); // Remove o usuário do localStorage
-                          window.location.href = "/login"; // Redireciona para a home
+                          window.location.href = "/login"; // Redireciona para a Página de Login
                         }}
                         style={{ width: "2.6rem", height: "2.6rem" }}
                         title="Sair"
