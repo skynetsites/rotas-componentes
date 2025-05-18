@@ -15,7 +15,7 @@
         // Verifica se já estamos redirecionando (para evitar loop)
         var params = new URLSearchParams(window.location.search);
         if (!params.has('redirect')) {
-          var redirectUrl = '/?redirect=' + currentPath;
+          var redirectUrl = '/' + currentPath;
           window.location.replace(redirectUrl);
         }
         // Caso contrário, não faz nada e deixa o index.html continuar
