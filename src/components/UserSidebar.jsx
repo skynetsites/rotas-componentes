@@ -143,6 +143,7 @@ function UserSidebar() {
                                         : v.link
                                     }
                                     title={v.name}
+                                    onClick={() => setVisible(false)} // Executa função de fechar o sidebar
                                   >
                                     <i className={`${v.icon} mr-2`}></i>
                                     <span className="font-medium">

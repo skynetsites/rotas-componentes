@@ -8,7 +8,7 @@ const App = lazy(() => import("./App.jsx"));
 
 // Renderiza dentro do BrowserRouter pra ativar as rotas
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/rotas-componentes">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
