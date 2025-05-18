@@ -14,7 +14,7 @@
 
         // Evita redirecionar se já tem ?redirect
         if (!search.includes('redirect=')) {
-          const redirectUrl = base + '/index.html?redirect=' + path;
+          const redirectUrl = '/index.html?redirect=' + path;
           window.location.replace(redirectUrl);
         }
       })();
