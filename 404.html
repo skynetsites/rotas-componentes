@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Página não encontrada</title>
     <script>
-      // Redireciona qualquer requisição para o index.html
+      // Redireciona qualquer requisição para a URL base da aplicação
       var path = window.location.pathname;
-      var root = window.location.origin + window.location.pathname.split('/')[1];
-      if (path !== '/') {
-        window.location.replace(root + '/index.html');
+      var basePath = '/rotas-componentes';  // Subpasta onde sua aplicação está hospedada
+      if (!path.startsWith(basePath)) {
+        window.location.replace(basePath + '/');
       }
     </script>
   </head>
