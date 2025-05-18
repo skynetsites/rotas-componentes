@@ -10,10 +10,10 @@
     <script>
       (function () {
         const params = new URLSearchParams(window.location.search);
-        const redirect = params.get('/');
+        const redirect = params.get('redirect');
 
         if (redirect) {
-          // Remove o ?redirect da URL e carrega a rota limpa
+          // Remove o parâmetro da URL sem recarregar a página
           window.history.replaceState(null, '', redirect);
         }
       })();
