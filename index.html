@@ -6,6 +6,18 @@
     <link rel="icon" type="image/svg+xml" href="/rotas-componentes/favicon-light.svg" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="/rotas-componentes/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
     <title>Skynet React</title>
+    <!-- Adicione isso ANTES do React carregar -->
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get('redirect');
+
+        if (redirect) {
+          // Remove o ?redirect da URL e carrega a rota limpa
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/rotas-componentes/assets/index-CJm09NWN.js"></script>
   </head>
   <body>
