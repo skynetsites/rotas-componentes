@@ -15,7 +15,7 @@
         // Verifica se já estamos redirecionando (para evitar loop)
         var params = new URLSearchParams(window.location.search);
         if (!params.has('redirect')) {
-          var redirectUrl = base + '/' + currentPath;
+          var redirectUrl = '/rotas-componentes' + currentPath;
           window.location.replace(redirectUrl);
         }
         // Caso contrário, não faz nada e deixa o index.html continuar
