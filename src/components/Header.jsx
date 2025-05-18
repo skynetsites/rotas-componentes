@@ -38,7 +38,16 @@ const Header = () => {
         <Logo className="gap-1 xl:text-6xl text-4xl text-blue-700 font-bold" />
       </div>
       {/* Menu de navegação e sidebar do perfil */}
-      <Menubar model={menu} end={<UserSidebar />} className="bg-white" />
+      <Menubar 
+        model={menu} 
+        end={<UserSidebar />} 
+        className="bg-white"
+         pt={{ 
+          submenu: {
+            className: 'px-1'
+          }
+        }} 
+      />
     </header>
   );
 };
