@@ -8,6 +8,8 @@
       // Redireciona qualquer requisição para a URL base da aplicação
       var path = window.location.pathname;
       var basePath = '/rotas-componentes';  // Subpasta onde sua aplicação está hospedada
+
+      // Se o caminho não começar com "/rotas-componentes", redireciona para o index.html
       if (!path.startsWith(basePath)) {
         window.location.replace(basePath + '/');
       }
