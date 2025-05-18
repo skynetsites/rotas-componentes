@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     // Rodapé
-    <footer className="bg-blue-900 text-blue-50 py-7 px-3">
+    <footer className="bg-blue-900 text-blue-50 py-7 px-6">
       <div className="flex flex-column max-w-full mx-auto pt-2">
         {/* Logo */}
         <Logo className="gap-2 xl:text-5xl text-4xl text-blue-50 font-bold mb-3" />
@@ -43,10 +43,10 @@ const Footer = () => {
               key={i} 
               to={v.link || "#"}
               aria-label={v.name}
-              className="text-blue-50 text-2xl transition-colors duration-300 hover:text-white"
+              className="text-blue-50 transition-colors duration-300 hover:text-white"
               title={v.name}
             >
-              <i className={v.icon}></i>
+              <i className={v.icon} style={{ fontSize: '1.3rem' }}></i>
             </Link>
           ))}
         </div>
