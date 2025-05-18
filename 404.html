@@ -7,17 +7,19 @@
 </head>
 <body>
     <h1>404 - Página não encontrada</h1>
-    <script type="text/javascript">
-    (function () {
+     <script type="text/javascript">
+      (function () {
         var base = '/rotas-componentes';
         var currentPath = window.location.pathname;
 
-        // Se já estamos em index.html (evita loop)
-        if (!window.location.pathname.includes('/index.html')) {
-        var redirectUrl = base + currentPath;
-        window.location.replace(redirectUrl);
+        // Verifica se já estamos redirecionando (para evitar loop)
+        var params = new URLSearchParams(window.location.search);
+        if (!params.has('redirect')) {
+          var redirectUrl = base + '/index.html?redirect=' + currentPath;
+          window.location.replace(redirectUrl);
         }
-    })();
-</script>
+        // Caso contrário, não faz nada e deixa o index.html continuar
+      })();
+    </script>
 </body>
 </html>
