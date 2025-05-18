@@ -8,12 +8,11 @@
 <body>
     <h1>404 - Página não encontrada</h1>
     <script type="text/javascript">
-      // Redireciona para index.html, preservando a rota
       (function () {
         var currentPath = window.location.pathname;
-        var basePath = '/rotas-componentes'; // Substitua pelo nome real do repositório
-        var redirectTo = basePath + '/?redirect=' + currentPath;
-        window.location.replace(redirectTo);
+        var base = '/rotas-componentes'; // Substitua se necessário
+        var redirectUrl = base + currentPath;
+        window.location.replace(redirectUrl);
       })();
     </script>
 </body>
