@@ -38,7 +38,7 @@ const Header = () => {
         <Logo className="gap-1 xl:text-6xl text-4xl text-blue-700 font-bold" />
       </div>
       {/* Menu de navegação e sidebar do perfil */}
-      <Menubar model={menu} end={<UserSidebar />} />
+      <Menubar model={menu} end={<UserSidebar />} className="bg-white" />
     </header>
   );
 };
