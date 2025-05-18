@@ -44,6 +44,9 @@ export const GlobalStyle = createGlobalStyle`
   .p-menubar-mobile-active .p-menubar-root-list {
     padding: 0.25rem 0;
     border-radius: 6px;
+    & li a {
+      margin: .25rem 0.5rem !important;
+    }
   }
 
   /* Estiliza o spinner de carregamento */
