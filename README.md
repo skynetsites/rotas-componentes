@@ -42,4 +42,3 @@
 **Arquivar o código no repositório do GitHub.**  
 
 **Ao final da atividade os alunos devem entender como trabalhar com rotas e componentes em React, além de implementar técnicas para melhorar a performance do aplicativo.**
-"""
