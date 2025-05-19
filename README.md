@@ -10,7 +10,7 @@
 
 ### **1. Configuração do React Router:**
 - Instale o React Router no seu projeto.  
-- Configure o Router na aplicação principal (```App.js``` ou **index.js**).
+- Configure o Router na aplicação principal (**App.js** ou **index.js**).
 
 ### **2. Criando Componentes de Página:**
 - Crie componentes para pelo menos três páginas diferentes (por exemplo, **Home**, **About** e **Contact**).  
