@@ -38,7 +38,15 @@
 
 ---
 
-### **📦 Arquivamento no GitHub:**  
-**Arquivar o código no repositório do GitHub.**  
+## **📄 Licença**
 
-**Ao final da atividade os alunos devem entender como trabalhar com rotas e componentes em React, além de implementar técnicas para melhorar a performance do aplicativo.**
+Este projeto é desenvolvido exclusivamente para fins educacionais como parte do curso de formação em Desenvolvedor Web Full Stack da Geração Tech do Instituto Euvaldo Lodi (IEL) e o Governo do Estado do Ceará por meio da Agência de Desenvolvimento do Estado do Ceará (ADECE) para capacitação de jovens na área da tecnologia.
+
+---
+
+## **👨‍💻 Autor**
+
+**Desenvolvido por:** Isaias Oliveira<br>
+**Curso:** Desenvolvedor Web Full Stack<br>
+**Créditos:** Projeto Geração Tech – Instituto Euvaldo Lodi (IEL)<br> 
+```
